@@ -1,6 +1,6 @@
 # EventRegistration-Tutorials
 
-Continuously published at https://mcgill-ecse321-winter2020.github.io/ecse321-tutorial-notes/
+Continuously published at https://mcgill-ecse321-fall2020.github.io/ecse321-tutorial-notes/
 
 Filename format:
 ```
