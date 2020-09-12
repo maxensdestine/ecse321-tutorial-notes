@@ -1,0 +1,83 @@
+ifdef::env-github,env-browser[:outfilesuffix: .adoc]
+:rootdir: .
+ifndef::source-highlighter[:source-highlighter: highlightjs]
+ifndef::highlightjsdir[:highlightjsdir: {rootdir}/highlight.js]
+ifndef::highlightjs-theme[:highlightjs-theme: foundation]
+:imagesdir: {rootdir}
+:toclevels: 3
+:toc:
+:toc2:
+:chapterdir: .
+:numbered:
+
+= ECSE 321 Introduction to Software Engineering: Hands-on Tutorials
+McGill University
+
+Sections of the tutorial will continuously be published at this web page.
+
+== Preliminaries
+
+<<<
+include::{chapterdir}/01-1-P-Github-Classroom.adoc[]
+
+<<<
+include::{chapterdir}/01-2-P-Agile-Tools.adoc[]
+
+<<<
+include::{chapterdir}/01-3-P-Terminal-Basics.adoc[]
+
+<<<
+include::{chapterdir}/01-4-P-Git-Basics.adoc[]
+
+<<<
+include::{chapterdir}/02-1-P-Gradle.adoc[]
+
+== Backend
+
+<<<
+include::{chapterdir}/02-2-B-Backend-Setup.adoc[]
+
+<<<
+include::{chapterdir}/02-3-P-Travis.adoc[]
+
+<<<
+include::{chapterdir}/02-4-B-Heroku.adoc[]
+
+<<<
+include::{chapterdir}/03-1-B-UML-Lab.adoc[]
+
+<<<
+include::{chapterdir}/03-2-B-Spring-Tools-Suite.adoc[]
+
+<<<
+include::{chapterdir}/03-3-B-Spring-CRUD.adoc[]
+
+<<<
+include::{chapterdir}/03-4-B-Spring-Testing.adoc[]
+
+<<<
+include::{chapterdir}/05-1-B-Spring-RESTful-Services.adoc[]
+
+<<<
+include::{chapterdir}/06-1-B-Backend-Service-Testing.adoc[]
+
+<<<
+include::{chapterdir}/07-1-B-Test-Coverage.adoc[]
+
+== Web Frontent
+
+<<<
+include::{chapterdir}/08-1-W-Install-Vue.adoc[]
+
+<<<
+include::{chapterdir}/08-2-W-Vuejs-FirstComponent.adoc[]
+
+<<<
+include::{chapterdir}/09-1-W-Dynamic-Vuejs-Content.adoc[]
+
+<<<
+include::{chapterdir}/09-2-W-Calling-backend-service.adoc[]
+
+<<<
+include::{chapterdir}/09-3-W-Extra-steps-for-Events.adoc[]
+

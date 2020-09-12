@@ -1,0 +1,22 @@
+name: Build and Deploy GH Pages
+on:
+  push:	
+    branches:	
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install # The project is built using npm and placed in the 'build' folder.
+      run: |
+        sudo apt-get install ruby-full
+        sudo gem install asciidoctor
+    - name: Build page
+      run: ./convert.sh
+    - name: GitHub Pages Deploy
+      uses: maxheld83/ghpages@v0.2.1
+      env:
+        BUILD_DIR: output/
+        GH_PAT: ${{ secrets.GH_PAT }}
+    
