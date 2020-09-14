@@ -18,19 +18,20 @@ Sections of the tutorial will continuously be published at this web page.
 == Preliminaries
 
 <<<
-include::{chapterdir}/01-1-P-Github-Classroom.adoc[]
+include::{chapterdir}/01-1-P-Agile-Tools.adoc[]
 
 <<<
-include::{chapterdir}/01-2-P-Agile-Tools.adoc[]
+include::{chapterdir}/01-2-P-Terminal-Basics.adoc[]
 
 <<<
-include::{chapterdir}/01-3-P-Terminal-Basics.adoc[]
+include::{chapterdir}/01-3-P-Git-Basics.adoc[]
 
-<<<
-include::{chapterdir}/01-4-P-Git-Basics.adoc[]
+// <<<
+// include::{chapterdir}/01-4-P-Github-Classroom.adoc[]
 
-<<<
-include::{chapterdir}/02-1-P-Gradle.adoc[]
+// <<<
+// include::{chapterdir}/02-1-P-Gradle.adoc[]
+
 
 // == Backend
 
