@@ -29,20 +29,20 @@ include::{chapterdir}/01-3-P-Git-Basics.adoc[]
 // <<<
 // include::{chapterdir}/01-4-P-Github-Classroom.adoc[]
 
-// <<<
-// include::{chapterdir}/02-1-P-Gradle.adoc[]
+<<<
+include::{chapterdir}/02-1-P-Gradle.adoc[]
 
 
-// == Backend
+== Backend
 
-// <<<
-// include::{chapterdir}/02-2-B-Backend-Setup.adoc[]
+<<<
+include::{chapterdir}/02-2-B-Backend-Setup.adoc[]
 
-// <<<
-// include::{chapterdir}/02-3-P-Travis.adoc[]
+<<<
+include::{chapterdir}/02-3-P-Travis.adoc[]
 
-// <<<
-// include::{chapterdir}/02-4-B-Heroku.adoc[]
+<<<
+include::{chapterdir}/02-4-B-Heroku.adoc[]
 
 // <<<
 // include::{chapterdir}/03-1-B-UML-Lab.adoc[]
