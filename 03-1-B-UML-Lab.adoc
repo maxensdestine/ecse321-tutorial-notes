@@ -2,9 +2,10 @@
 
 ==== Installing UML Lab
 
-Go to link:https://www.uml-lab.com/en/download/[the download page of UML Lab] and install it on your machine. To activate it, use the licence key shared on MyCourses in the Sprint 1 folder.
+Go to link:https://www.uml-lab.com/en/download/[the download page of UML Lab] and install it on your machine. You can either register for the academic program or download UML Lab 30 days for free. UML Lab generates the JPA compliant code automatically from the domain model (class diagram). You can also use link:https://cruise.umple.org/umpleonline/[Umple] to generate POJO classes for your class diagram. In this case, you have to manually add the JPA annotations to the generated POJO classes.
+
 [NOTE]
-By the time of the tutorial, we may not have the license key ready. You should be able to work with a 30-day trial version in this case and activate your license later.
+If you plan to use UML Lab then by the time of the tutorial, you may not have the license key ready for academic program as it takes some time. You should be able to work with a 30-day trial version in this case and activate your academic license later.
 
 ==== UML Lab project setup
 
