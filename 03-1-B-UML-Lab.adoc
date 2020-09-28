@@ -5,7 +5,12 @@
 Go to link:https://www.uml-lab.com/en/download/[the download page of UML Lab] and install it on your machine. You can either register for the academic program or download UML Lab 30 days for free. UML Lab generates the JPA compliant code automatically from the domain model (class diagram). You can also use link:https://cruise.umple.org/umpleonline/[Umple] to generate POJO classes for your class diagram. In this case, you have to manually add the JPA annotations to the generated POJO classes.
 
 [NOTE]
-If you plan to use UML Lab then by the time of the tutorial, you may not have the license key ready for academic program as it takes some time. You should be able to work with a 30-day trial version in this case and activate your academic license later.
+If you plan to use UML Lab then by the time of the tutorial, you may not have the license key ready for academic program as it takes some time. You should be able to work with a 30-day trial version in this case and activate your academic license later. You can follow steps 2.4.1 to 2.4.3.
+
+[NOTE]
+If you plan to use link:https://cruise.umple.org/umpleonline/[Umple] or some other tool for generating the Java classes from the UML class diagram then you have to follow the step 2.4.4. Please note in this approach you have to refine the code and add the JPA annotations manually.
+
+
 
 ==== UML Lab project setup
 
@@ -56,3 +61,63 @@ If you forget to supply an ID to *any of your entities*, Hibernate will throw an
 
 . Share the modeling project to git. You can use the command line git client or EGit. +
 image:figs/umllab-share-project.png[width=600]
+
+==== Adding JPA Annotations to POJO classes
+. For example, if we use link:https://cruise.umple.org/umpleonline/[Umple] tool then we can use the below textual code (in left window in Umple) to generate the class digaram (in right window in Umple). You can also directly create the class diagram in the graphical window on right.
+
++
+[source,umple]
+----
+class Person
+{
+  name;
+}
+
+class Event
+{
+  name;
+  Date eventDate;
+  Time startTime;
+  Time endTime;
+}
+
+class Registration
+{
+  Integer id;
+  }
+
+class RegistrationManager
+{
+}
+
+association {  
+    1 RegistrationManager registrationManager <@>- 0..* Registration registrations;  
+}
+
+association {  
+    1 RegistrationManager registrationManager <@>- 0..* Event events;  
+}
+
+association {  
+    1 RegistrationManager registrationManager <@>- 0..* Person participants;  
+}
+
+association {  
+   0..* Registration registration ->  1 Event event ;  
+}
+
+
+association { 
+    0..* Registration registration ->  1 Person participant;
+}
+----
+
+
+. Next, you can generate the Java code and see the generated code in different tabs as shown in the below figure. +
+image:figs/umple.png[Umple Online Tool,width=950]
++
+[NOTE]
+The above example is just to illustrate how to generate Java classes from a class diagram. As mentioned earlier, the generated code from Umple tool is not JPA compliant. We have to refine it and add JPA annotations manually.
+
+. The final code (directly from UML lab OR after refining the code obtained from Umple) which is JPA compliant is available here: link:https://github.com/McGill-ECSE321-Fall2020/ecse321-tutorial-notes/raw/master/resources/Computation.zip[Model Classes.zip]. For gaining insights into JPA complaint code, please compare link:https://github.com/McGill-ECSE321-Fall2020/ecse321-tutorial-notes/raw/master/resources/Computation.zip[Model Classes.zip] with the code generated from Umple to see the differences and also where to add JPA annotations.
+

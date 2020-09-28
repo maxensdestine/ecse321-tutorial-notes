@@ -148,4 +148,8 @@ public class TestEventRegistrationPersistence {
 }
 ----
 
+. In the end, you should have the given below structure in terms of packages. +
+
+image:figs/package-structure-2.png[Package Structure,width=400]
+
 . Run this test suite by _right clicking on the class -> Run as... -> JUnit test_. Again, don't forget to set the `SPRING_DATASOURCE_URL` value for the run configuration.
