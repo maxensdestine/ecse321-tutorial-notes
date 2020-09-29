@@ -1,6 +1,6 @@
 === CRUD Repositories
 
-Previously, in the `ca.mcgill.ecse321.eventregistration.dao.EventRegistrationRepository` class we used an instance of `javax.persistence.EntityManager` from Hibernate to directly to implement the required operations related to saving/retrieving data to/from a database (Create, Read, Update, and Delete operations, shortly, CRUD). 
+Previously, in the `ca.mcgill.ecse321.eventregistration.dao.EventRegistrationRepository` class we used an instance of `javax.persistence.EntityManager` from Hibernate to directly implement the required operations related to saving/retrieving data to/from a database (Create, Read, Update, and Delete operations, shortly, CRUD). 
 This section will introduce the Spring framework's inbuilt support for such CRUD operations via the `org.springframework.data.repository.CrudRepository` interface and will show how to use such repositories to implement your use cases in so-called _service_ classes.
 
 If you would like to, you can obtain a version of the project that already has the changes from the previous tutorials link:https://github.com/McGill-ECSE321-Winter2019/eventregistration[here].
